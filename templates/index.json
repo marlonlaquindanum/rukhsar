@@ -27,8 +27,9 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image": "shopify:\/\/shop_images\/20240501-HP-HeroFullWidth-MothersDay-d.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
