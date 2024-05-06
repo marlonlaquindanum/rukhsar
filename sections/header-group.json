@@ -43,92 +43,10 @@
         "padding_top": 20,
         "padding_bottom": 20
       }
-    },
-    "announcement_bar_ci7icd": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_Yzrn38": {
-          "type": "announcement",
-          "settings": {
-            "text": "Limited time only",
-            "link": ""
-          }
-        },
-        "announcement_TdVYrC": {
-          "type": "announcement",
-          "settings": {
-            "text": "Limited time only",
-            "link": ""
-          }
-        },
-        "announcement_mw7QRT": {
-          "type": "announcement",
-          "settings": {
-            "text": "Limited time only",
-            "link": ""
-          }
-        },
-        "announcement_6zXByg": {
-          "type": "announcement",
-          "settings": {
-            "text": "Limited time only",
-            "link": ""
-          }
-        },
-        "announcement_UVbXRk": {
-          "type": "announcement",
-          "settings": {
-            "text": "Limited time only",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_Yzrn38",
-        "announcement_TdVYrC",
-        "announcement_mw7QRT",
-        "announcement_6zXByg",
-        "announcement_UVbXRk"
-      ],
-      "settings": {
-        "color_scheme": "",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": true,
-        "change_slides_speed": 3,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
-    },
-    "announcement_bar_4zDAhy": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_cBUtaa": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "announcement_cBUtaa"
-      ],
-      "settings": {
-        "color_scheme": "scheme-4",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": false,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "announcement_bar_ci7icd",
-    "announcement_bar_4zDAhy"
+    "header"
   ]
 }
