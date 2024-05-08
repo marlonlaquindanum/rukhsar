@@ -1,0 +1,256 @@
+main {
+  margin-top: 44px;
+}
+
+.justify-space-between{
+  justify-content: space-between;
+}
+.announcement-bar__message {
+  font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 16.5px;
+}
+
+.announcement-bar .announcement-bar__message {
+  padding: 0;
+}
+
+.header__icon--cart {
+  width: 12rem;
+  text-decoration: none;
+}
+
+.cart-text {
+  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.cart-count-bubble {
+  background-color: #f00;
+  width: 2.7rem;
+  height: 2.7rem;
+  left: 12rem;
+}
+
+.cart-count-bubble > span {
+  font-family: "Proxima-Nova", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #fff;
+}
+
+.header-nav-search__container {
+  grid-area: navigation;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-search-input {
+  width: 23%;
+}
+
+.navbar-container > header-drawer {
+  display: block;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__active-menu-item {
+  font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.header__menu-item:hover span {
+  text-decoration: none;
+}
+
+.list-menu > li:last-child .header__active-menu-item {
+  color: rgb(231, 39, 55);
+}
+
+.header__menu-item span, details[open]>.header__menu-item {
+  text-decoration: none;
+}
+
+.header__menu-item .icon-caret {
+  display: none;
+}
+
+nav.header__inline-menu {
+  margin-top: 0 !important;
+  margin-left: 2rem;
+}
+
+.side-navigation, .header__icon--menu[aria-expanded=true]:before {
+  top: -5rem;
+  height: 100vh !important;
+  z-index: 3;
+}
+
+.shopify-section-group-header-group {
+  position: fixed;
+  width: 100%;
+}
+
+.search__input {
+  border: solid 1px #f5ae34;
+  border-radius: 3px 0 0 3px;
+  border-right: 0;
+  margin: 0;
+}
+
+.shopify-section-group-header-group {
+  z-index: 3;
+}
+
+.section-header.shopify-section-group-header-group {
+  top: 44px;
+}
+
+.list-menu--inline li:hover .header__active-menu-item {
+  color: #f5ae34;
+}
+
+.list-menu--inline li:last-child:hover .header__active-menu-item {
+  color: rgb(231, 39, 55);
+}
+
+.mega-menu__link:hover {
+  text-decoration: none !important;
+  color: #f5ae34 !important;
+}
+
+.mega-menu__link {
+  color: #555;
+  font-family: 'Sofia-Pro';
+  font-size: 18.5px;
+  font-weight: 400;
+  line-height: 25.9px;
+  text-decoration: none !important;
+}
+
+.list-unstyled .link {
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+.search__input:focus {
+  box-shadow: none;
+}
+
+.field:hover.field:after{
+  box-shadow: none !important;
+}
+
+.field:after {
+  box-shadow: 0 0 0 var(--inputs-border-width) #f5ae34, var(--inputs-border-opacity) !important;
+}
+
+.search__button {
+  background-color: #f5ae34 !important;
+}
+
+.icon-search {
+  color: #fff;
+}
+
+.field__label {
+  color: #f5ae34;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.header {
+  padding-top: 0 !important;
+}
+
+.container-news {
+  background-color: #f5b1c8;
+}
+
+.text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-group > h1, .text-group > h3 {
+  text-align: center;
+}
+
+.container-news {
+  display: flex;
+  justify-content: center;
+}
+
+.ticker-wrap {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #FFE1EB;
+}
+
+.ticker {
+  display: inline-block;
+  margin-top: 0;
+  animation: marquee 120s linear infinite;
+}
+
+.item-collection-1 {
+  position: relative;
+  left: 0%;
+  animation: swap 120s linear infinite;
+}
+
+.item-collection-1>.item {
+  display: inline-block;
+  padding: 0;
+  font-size: 24px;
+  color: #242424;
+  font-weight: 200;
+}
+
+.item-collection-2>.item {
+  display: inline-block;
+  padding: 0;
+  font-size: 24px;
+  color: #242424;
+  font-weight: 200;
+}
+
+@keyframes marquee {
+  0% {
+      transform: translateX(25%)
+  }
+  100% {
+      transform: translateX(-75%)
+  }
+}
+
+@keyframes swap {
+  0%, 50% {
+      left: 0%;
+  }
+  50.01%,
+  100% {
+      left: 100%;
+  }
+}
+
+.banner {
+  margin-top: 30px;
+}
