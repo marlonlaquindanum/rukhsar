@@ -826,9 +826,9 @@ nav.header__inline-menu {
   line-height: 27px;
 }
 
-.card__information {
-  padding-bottom: 0 !important;
-  padding-top: 7rem !important;
+.swiper-slide .card__content > .card__information {
+  padding-bottom: 0;
+  padding-top: 7rem;
 }
 
 .underline-links-hover:hover a {
@@ -1153,4 +1153,65 @@ body {
 
 .collection__view-all {
   margin: 70px 0;
+}
+
+.card-collection__btn {
+  display: inline-block;
+  margin-top: 6rem;
+  text-transform: uppercase;
+  color: #fff !important;
+  background-color: #000;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+}
+
+.card-wrapper .card__content > .card-information-headtext__wrapper {
+  padding-top: 4rem;
+}
+
+.collection-head--text__wrapper .card__heading > .full-unstyled-link {
+  width: 70%;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 400;
+  color: #000;
+}
+
+.title-wrapper-with-link {
+  justify-content: center;
+}
+
+.field__input {
+  background-color: #fff;
+}
+
+.contact {
+  max-width: 100%;
+}
+
+.contact .field > .field__input {
+  height: 5.5rem;
+}
+
+.contact__button > .button {
+  text-transform: unset;
+  color: #fff;
+  background-color: rgb(245, 174, 52);
+  width: 35%;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 4px;
+}
+
+.contact__button {
+  text-align: center;
+}
+
+.contact__button > .button:before, .contact__button > .button:after, .contact__button > .button:hover:before, .contact__button > .button:hover:after {
+  box-shadow: none;
+}
+
+.contact__button > .button:hover {
+  background-color: #000;
+  transition-duration: 0.3s;
 }

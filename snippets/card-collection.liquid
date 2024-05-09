@@ -92,13 +92,14 @@
                 {% endif %}
                 class="full-unstyled-link"
               >
+                abc
                 {%- if card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
                   {{ 'onboarding.collection_title' | t }}
                 {%- endif -%}
                 {%- if card_collection.description == blank -%}
-                  <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                  {% comment %} <span class="icon-wrap">{% render 'icon-arrow' %}</span> {% endcomment %}
                 {%- endif %}
               </a>
             </h3>
@@ -114,7 +115,7 @@
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
-        <div class="card__information">
+        <div class="card__information card-information-headtext__wrapper collection-head--text__wrapper">
           <h3 class="card__heading">
             <a
               {% if card_collection == blank %}
@@ -130,7 +131,7 @@
                 {{ 'onboarding.collection_title' | t }}
               {%- endif -%}
               {%- if card_collection.featured_image or card_collection.description == blank -%}
-                <span class="icon-wrap">{% render 'icon-arrow' %}</span>
+                {% comment %} <span class="icon-wrap">{% render 'icon-arrow' %}</span> {% endcomment %}
               {%- endif %}
             </a>
           </h3>
@@ -140,6 +141,7 @@
               <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span>
             </p>
           {%- endif -%}
+          <a href="#" class="card-collection__btn">shop now</a>
         </div>
       </div>
     {%- endif -%}
@@ -148,6 +150,7 @@
         <div class="card__information">
           <h3 class="card__heading card__heading--placeholder">
             <a role="link" aria-disabled="true" class="full-unstyled-link">
+              fgh
               {{ 'onboarding.collection_title' | t }}
               <span class="icon-wrap">{% render 'icon-arrow' %}</span>
             </a>
