@@ -5,16 +5,39 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "link_list_RgmiGj": {
+        "link_list_XEV8X6": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "",
             "menu": "footer"
+          }
+        },
+        "brand_information_EEjiia": {
+          "type": "brand_information",
+          "settings": {
+            "show_social": true
+          }
+        },
+        "text_VUaQab": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
+          }
+        },
+        "image_NiXXHL": {
+          "type": "image",
+          "settings": {
+            "image_width": 100,
+            "alignment": "center"
           }
         }
       },
       "block_order": [
-        "link_list_RgmiGj"
+        "link_list_XEV8X6",
+        "brand_information_EEjiia",
+        "text_VUaQab",
+        "image_NiXXHL"
       ],
       "settings": {
         "color_scheme": "scheme-1",
