@@ -192,6 +192,27 @@
     <div class="header-nav-search__container">
       <div class="navbar-container">
         {%- render 'header-drawer' -%}
+        <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+          {%- if settings.logo != blank -%}
+            <div class="header__heading-logo-wrapper">
+              {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
+              {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
+              {% capture sizes %}(max-width: {{ settings.logo_width | times: 2 }}px) 50vw, {{ settings.logo_width }}px{% endcapture %}
+              {% capture widths %}{{ settings.logo_width }}, {{ settings.logo_width | times: 1.5 | round }}, {{ settings.logo_width | times: 2 }}{% endcapture %}
+              {{ settings.logo | image_url: width: 600 | image_tag:
+                class: 'header__heading-logo motion-reduce navbar-logo',
+                widths: widths,
+                height: logo_height,
+                width: settings.logo_width,
+                alt: logo_alt,
+                sizes: sizes,
+                preload: true
+              }}
+            </div>
+          {%- else -%}
+            <span class="h2">{{ shop.name }}</span>
+          {%- endif -%}
+        </a>
         {%- render 'header-mega-menu' -%}
       </div>
       <predictive-search class="search-modal__form header-search-input" data-loading-text="{{ 'accessibility.loading' | t }}">
@@ -330,7 +351,19 @@
               endif
             -%}
           </span>
+          <span class="account-text">My Account</span>
         </a>
+        <a class="link-membership link-reward inactive" href="#">
+          <span class="mdi mdi-gift-outline"></span>dusk<strong> REWARDS</strong>
+        </a>
+        <div class="header-store-locator">
+          <span class="store-title">
+              <span class="pointer-icon mdi mdi-map-marker"></span>
+              <span id="dusksetheadStore"><strong>Set your store</strong></span>
+              <span class="arrow-icon"></span>
+          </span>
+          <span id="storetime" class="store-timing"></span>
+      </div>
       {%- endif -%}
 
       <a href="#" class="header-icon-reward"></a>
@@ -401,10 +434,14 @@
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        console.log("scroll top==>");
         this.header.classList.add('scrolled-past-header');
+        this.header.classList.add('scroll-bottom');
+        this.header.classList.add('scroll-header');
         if (this.preventHide) return;
         requestAnimationFrame(this.hide.bind(this));
       } else if (scrollTop < this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
+        console.log("scroll medium==>");
         this.header.classList.add('scrolled-past-header');
         if (!this.preventReveal) {
           requestAnimationFrame(this.reveal.bind(this));
@@ -418,6 +455,11 @@
           requestAnimationFrame(this.hide.bind(this));
         }
       } else if (scrollTop <= this.headerBounds.top) {
+        console.log("scroll down==>");
+        this.header.classList.remove('scroll-bottom');
+        setTimeout(() => {
+          this.header.classList.remove('scroll-header');
+        }, 100);
         this.header.classList.remove('scrolled-past-header');
         requestAnimationFrame(this.reset.bind(this));
       }
