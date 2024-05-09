@@ -2,10 +2,10 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
+    "top_anouncement_bar_P8UihW": {
+      "type": "top-anouncement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_DUXhrx": {
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
@@ -14,10 +14,10 @@
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement_DUXhrx"
       ],
       "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -32,7 +32,7 @@
         "logo_position": "top-left",
         "menu": "main-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "always",
         "show_line_separator": true,
         "color_scheme": "scheme-1",
         "menu_color_scheme": "scheme-1",
@@ -46,7 +46,7 @@
     }
   },
   "order": [
-    "announcement-bar",
+    "top_anouncement_bar_P8UihW",
     "header"
   ]
 }
