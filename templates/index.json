@@ -159,7 +159,7 @@
     "contact_form_custom_j4X8dt": {
       "type": "contact-form-custom",
       "settings": {
-        "heading": "Contact form",
+        "heading": "",
         "heading_size": "h1",
         "color_scheme": "",
         "padding_top": 36,
