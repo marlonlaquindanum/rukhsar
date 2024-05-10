@@ -19,7 +19,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Main-banner-1.jpg",
             "heading": "",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "subheading": "",
             "button_label": "",
             "link": "",
@@ -57,7 +57,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "adapt_image",
         "slider_visual": "counter",
         "auto_rotate": true,
         "change_slides_speed": 5,
