@@ -203,6 +203,13 @@
             "menu_text": "gifts",
             "menu_url": ""
           }
+        },
+        "item_MmjXRt": {
+          "type": "item",
+          "settings": {
+            "menu_text": "oils & fragrances",
+            "menu_url": "shopify:\/\/collections"
+          }
         }
       },
       "block_order": [
@@ -210,7 +217,8 @@
         "item_whRD84",
         "item_Fhq6nP",
         "item_CHWUdj",
-        "item_CFdyNR"
+        "item_CFdyNR",
+        "item_MmjXRt"
       ],
       "settings": {
         "head_text": "100+ New Arrivals",
