@@ -82,6 +82,65 @@
         "padding_bottom": 36
       }
     },
+    "new_arrivals_k7UQEV": {
+      "type": "new-arrivals",
+      "blocks": {
+        "item_VwKbAk": {
+          "type": "item",
+          "settings": {
+            "menu_text": "candles",
+            "menu_url": "shopify:\/\/collections"
+          }
+        },
+        "item_whRD84": {
+          "type": "item",
+          "settings": {
+            "menu_text": "diffusers",
+            "menu_url": "shopify:\/\/collections"
+          }
+        },
+        "item_Fhq6nP": {
+          "type": "item",
+          "settings": {
+            "menu_text": "decor",
+            "menu_url": "shopify:\/\/collections"
+          }
+        },
+        "item_CHWUdj": {
+          "type": "item",
+          "settings": {
+            "menu_text": "bath & body",
+            "menu_url": "shopify:\/\/collections"
+          }
+        },
+        "item_CFdyNR": {
+          "type": "item",
+          "settings": {
+            "menu_text": "gifts",
+            "menu_url": ""
+          }
+        },
+        "item_MmjXRt": {
+          "type": "item",
+          "settings": {
+            "menu_text": "oils & fragrances",
+            "menu_url": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "item_VwKbAk",
+        "item_whRD84",
+        "item_Fhq6nP",
+        "item_CHWUdj",
+        "item_CFdyNR",
+        "item_MmjXRt"
+      ],
+      "settings": {
+        "head_text": "100+ New Arrivals",
+        "body_text": "shop new in"
+      }
+    },
     "featured_collection_custom_fMbV3b": {
       "type": "featured-collection-custom",
       "settings": {
@@ -165,75 +224,16 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "new_arrivals_k7UQEV": {
-      "type": "new-arrivals",
-      "blocks": {
-        "item_VwKbAk": {
-          "type": "item",
-          "settings": {
-            "menu_text": "candles",
-            "menu_url": "shopify:\/\/collections"
-          }
-        },
-        "item_whRD84": {
-          "type": "item",
-          "settings": {
-            "menu_text": "diffusers",
-            "menu_url": "shopify:\/\/collections"
-          }
-        },
-        "item_Fhq6nP": {
-          "type": "item",
-          "settings": {
-            "menu_text": "decor",
-            "menu_url": "shopify:\/\/collections"
-          }
-        },
-        "item_CHWUdj": {
-          "type": "item",
-          "settings": {
-            "menu_text": "bath & body",
-            "menu_url": "shopify:\/\/collections"
-          }
-        },
-        "item_CFdyNR": {
-          "type": "item",
-          "settings": {
-            "menu_text": "gifts",
-            "menu_url": ""
-          }
-        },
-        "item_MmjXRt": {
-          "type": "item",
-          "settings": {
-            "menu_text": "oils & fragrances",
-            "menu_url": "shopify:\/\/collections"
-          }
-        }
-      },
-      "block_order": [
-        "item_VwKbAk",
-        "item_whRD84",
-        "item_Fhq6nP",
-        "item_CHWUdj",
-        "item_CFdyNR",
-        "item_MmjXRt"
-      ],
-      "settings": {
-        "head_text": "100+ New Arrivals",
-        "body_text": "shop new in"
-      }
     }
   },
   "order": [
     "news_letter_HnnWRx",
     "image_banner",
     "featured_collection",
+    "new_arrivals_k7UQEV",
     "featured_collection_custom_fMbV3b",
     "healing_stone_8bi4Wc",
     "collection_list_custom_HzzQzp",
-    "contact_form_custom_j4X8dt",
-    "new_arrivals_k7UQEV"
+    "contact_form_custom_j4X8dt"
   ]
 }
