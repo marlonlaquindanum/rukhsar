@@ -11,43 +11,20 @@
             "heading": "",
             "menu": "footer"
           }
-        },
-        "brand_information_EEjiia": {
-          "type": "brand_information",
-          "settings": {
-            "show_social": true
-          }
-        },
-        "text_VUaQab": {
-          "type": "text",
-          "settings": {
-            "heading": "Heading",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-          }
-        },
-        "image_NiXXHL": {
-          "type": "image",
-          "settings": {
-            "image_width": 100,
-            "alignment": "center"
-          }
         }
       },
       "block_order": [
-        "link_list_XEV8X6",
-        "brand_information_EEjiia",
-        "text_VUaQab",
-        "image_NiXXHL"
+        "link_list_XEV8X6"
       ],
       "settings": {
         "color_scheme": "scheme-1",
-        "newsletter_enable": true,
+        "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": true,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
-        "payment_enable": true,
+        "payment_enable": false,
         "show_policy": false,
         "margin_top": 0,
         "padding_top": 36,

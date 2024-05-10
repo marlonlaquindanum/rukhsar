@@ -144,7 +144,7 @@
     "featured_collection_custom_fMbV3b": {
       "type": "featured-collection-custom",
       "settings": {
-        "title": "Featured collection",
+        "title": "",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
