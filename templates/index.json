@@ -165,6 +165,33 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "new_arrivals_k7UQEV": {
+      "type": "new-arrivals",
+      "blocks": {
+        "item_VwKbAk": {
+          "type": "item",
+          "settings": {
+            "menu_text": "candles",
+            "menu_url": "shopify:\/\/collections"
+          }
+        },
+        "item_whRD84": {
+          "type": "item",
+          "settings": {
+            "menu_text": "diffusers",
+            "menu_url": "shopify:\/\/collections"
+          }
+        }
+      },
+      "block_order": [
+        "item_VwKbAk",
+        "item_whRD84"
+      ],
+      "settings": {
+        "head_text": "100+ New Arrivals",
+        "body_text": "shop new in"
+      }
     }
   },
   "order": [
@@ -174,6 +201,7 @@
     "featured_collection_custom_fMbV3b",
     "healing_stone_8bi4Wc",
     "collection_list_custom_HzzQzp",
-    "contact_form_custom_j4X8dt"
+    "contact_form_custom_j4X8dt",
+    "new_arrivals_k7UQEV"
   ]
 }
