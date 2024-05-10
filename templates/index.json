@@ -189,12 +189,20 @@
             "menu_text": "decor",
             "menu_url": "shopify:\/\/collections"
           }
+        },
+        "item_CHWUdj": {
+          "type": "item",
+          "settings": {
+            "menu_text": "bath & body",
+            "menu_url": "shopify:\/\/collections"
+          }
         }
       },
       "block_order": [
         "item_VwKbAk",
         "item_whRD84",
-        "item_Fhq6nP"
+        "item_Fhq6nP",
+        "item_CHWUdj"
       ],
       "settings": {
         "head_text": "100+ New Arrivals",
