@@ -196,13 +196,21 @@
             "menu_text": "bath & body",
             "menu_url": "shopify:\/\/collections"
           }
+        },
+        "item_CFdyNR": {
+          "type": "item",
+          "settings": {
+            "menu_text": "gifts",
+            "menu_url": ""
+          }
         }
       },
       "block_order": [
         "item_VwKbAk",
         "item_whRD84",
         "item_Fhq6nP",
-        "item_CHWUdj"
+        "item_CHWUdj",
+        "item_CFdyNR"
       ],
       "settings": {
         "head_text": "100+ New Arrivals",
