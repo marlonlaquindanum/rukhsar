@@ -1,0 +1,62 @@
+<div class="new-arrival page-width">
+  <h1 class="head-text">{{ section.settings.head_text }}</h1>
+  <h4 class="body-text">{{ section.settings.body_text }}</h4>
+  <div class="new-arrival__menu">
+    <ul class="menu-list">
+      {% for item in section.blocks %}
+        {% case item.type %}
+          {% when 'item' %}
+            <li class="menu-item">
+              <a href="{{ item.settings.menu_url }}">{{ item.settings.menu_text }}</a>
+            </li>
+        {% endcase %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "New Arrival",
+  "tag": "section",
+  "class": "new-arrival",
+  "settings": [
+    {
+      "type": "text",
+      "id": "head_text",
+      "label": "Head Text",
+      "default": "100+ New Arrivals"
+    },
+    {
+      "type": "text",
+      "id": "body_text",
+      "label": "Text",
+      "default": "shop new in"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Menu",
+      "settings": [
+        {
+          "type": "text",
+          "id": "menu_text",
+          "label": "Text",
+          "default": "Menu Text"
+        },
+        {
+          "type": "url",
+          "id": "menu_url",
+          "label": "Menu URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Arrivals"
+    }
+  ]
+}
+{% endschema %}

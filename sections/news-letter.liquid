@@ -13,7 +13,7 @@
   </div>
 {% endcomment %}
 <div class="col-12 text-center align-items-center justify-content-center siteWide-containter" style="overflow: hidden;">
-  <a href="/new">
+  <a href="#">
     <div class="ticker-wrap">
       <div class="ticker">
         <span class="item-collection-1">
@@ -57,7 +57,7 @@
         sizes="(min-width: 750px) calc(100vw - 22rem), 1200px"
         src="{{ section.settings.image | image_url: width: 1445 }}"
         loading="lazy"
-        width="1200"
+        width="100%"
         height="{{ 1400 | divided_by: section.settings.image.aspect_ratio | ceil }}"
       >
     </a>
