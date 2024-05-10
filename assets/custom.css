@@ -2,7 +2,7 @@
   font-family: "Good sans";
   src: url("{{'Sofia Pro Black Az.otf' | asset_url }}") format("otf"),
   url("{{'Sofia Pro Black Az.otf' | asset_url }}") format("otf");
-  }
+}
 
 main {
   margin-top: 44px;
