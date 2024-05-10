@@ -182,11 +182,19 @@
             "menu_text": "diffusers",
             "menu_url": "shopify:\/\/collections"
           }
+        },
+        "item_Fhq6nP": {
+          "type": "item",
+          "settings": {
+            "menu_text": "decor",
+            "menu_url": "shopify:\/\/collections"
+          }
         }
       },
       "block_order": [
         "item_VwKbAk",
-        "item_whRD84"
+        "item_whRD84",
+        "item_Fhq6nP"
       ],
       "settings": {
         "head_text": "100+ New Arrivals",
