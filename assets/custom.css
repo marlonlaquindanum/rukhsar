@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Good sans";
+  font-family: "Sofia-Pro";
   src: url("{{'Sofia Pro Black Az.otf' | asset_url }}") format("otf"),
   url("{{'Sofia Pro Black Az.otf' | asset_url }}") format("otf");
 }
@@ -70,6 +70,14 @@ main {
   align-items: center;
 }
 
+.header-menu-item > span {
+  font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
+  color: #555;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .header__active-menu-item {
   font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
   color: #555;
@@ -86,8 +94,21 @@ main {
   color: rgb(231, 39, 55);
 }
 
+header-menu summary.list-menu__item {
+  padding-right: 1rem;
+}
+
 .header__menu-item span, details[open]>.header__menu-item {
+  font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
+  color: #555;
+  font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
+  text-decoration: none;
+}
+
+.list-menu--inline li:hover .header__menu-item span {
+  color: #f5ae34;
 }
 
 .header__menu-item .icon-caret {
@@ -123,10 +144,6 @@ nav.header__inline-menu {
 
 .section-header.shopify-section-group-header-group {
   top: 40px;
-}
-
-.list-menu--inline li:hover .header__active-menu-item {
-  color: #f5ae34;
 }
 
 .list-menu--inline li:last-child:hover .header__active-menu-item {
@@ -258,12 +275,17 @@ nav.header__inline-menu {
   }
 }
 
-.card__information a {
+.card__information > .card__heading > a {
   font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-weight: 300;
   color: #000;
   line-height: 27px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .swiper-slide .card__content > .card__information {
@@ -283,10 +305,18 @@ nav.header__inline-menu {
 .card-information {
   text-align: center !important;
 } */
+
+.price-item.price-item--regular {
+  font-size: 18px;
+}
+
+.card-information .regular-wrapper .price-item {
+  font-size: 18px;
+}
+
 .price__container .price-item--regular {
   text-decoration: none !important;
   color: #747474;
-  font-size: 18px !important;
   font-weight: 700;
   line-height: 20px;
   text-align: left;
@@ -294,7 +324,6 @@ nav.header__inline-menu {
 
 .price-item--sale {
   color: rgb(101, 28, 171);
-  font-size: 18px !important;
   font-weight: 700;
   line-height: 20px;
   text-align: left;
@@ -334,7 +363,7 @@ nav.header__inline-menu {
 
 .price-item {
   display: block !important;
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   margin-top: 3px !important;
 }
@@ -371,7 +400,7 @@ s.price-item.price-item--regular {
 
 .button {
   text-transform: uppercase;
-  color: #fff;
+  /* color: #fff; */
   font-weight: 700;
 }
 
@@ -482,7 +511,7 @@ s.price-item.price-item--regular {
   width: 5rem;
 }
 
-.scroll-header .header__heading {
+.scroll-header .header__heading-link {
   text-decoration: 0.3s;
   display: none;
 }
@@ -512,7 +541,7 @@ s.price-item.price-item--regular {
 }
 
 .scroll-bottom .header {
-  height: 70px;
+  height: 100px;
 }
 
 .collection {
@@ -603,6 +632,7 @@ body {
   background-color: #000;
   padding: 1rem 2.5rem;
   text-decoration: none;
+  width: 35%;
 }
 
 .card-wrapper .card__content > .card-information-headtext__wrapper {
@@ -610,7 +640,7 @@ body {
 }
 
 .collection-head--text__wrapper .card__heading > .full-unstyled-link {
-  width: 70%;
+  width: 100%;
   line-height: 40px;
   font-size: 30px;
   font-weight: 400;
@@ -677,14 +707,19 @@ body {
   display: flex;
   list-style-type: none;
   width: 80%;
-  justify-content: space-evenly;
+  justify-content: center;
   text-transform: uppercase;
+  flex-wrap: wrap;
+}
+
+.menu-item {
+  margin: 0 1rem;
 }
 
 .menu-item > a {
   text-transform: uppercase;
   color: #000;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .new-arrival__menu {
@@ -744,4 +779,40 @@ footer > .footer__content-top .footer-block.grid__item {
 
 .social-icons-wrapper > ul {
   justify-content: flex-start;
+}
+
+.body-text {
+  margin: 2rem 0;
+}
+
+.card-information .regular-wrapper .price-item {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 989px) {
+  .header {
+    grid-template-areas:
+    "heading icons icons"
+    "navigation navigation navigation";
+  }
+
+  .header-search-input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .header__icons .header__icon .account-text {
+    display: none;
+  }
+
+  .header__icon--account:before {
+    right: -40px;
+  }
+}
+
+@media  screen and (min-width: 650px) and (max-width: 1100px) {
+  .card-information .regular-wrapper > .price-item, .card-information .rewards-wrapper > .price-item {
+    font-size: 15px;
+  }
 }

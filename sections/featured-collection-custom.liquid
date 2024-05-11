@@ -237,20 +237,31 @@
   </div>
 </div>
 <script>
-  console.log('screen width==>');
-  var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    loop: true,
-    spaceBetween: 20,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button__next',
-      prevEl: '.swiper-button__prev',
-    },
-  });
+  function showSwiperSlide(perPageNum) {
+    var mySwiper = new Swiper('.swiper-container', {
+      slidesPerView: perPageNum,
+      loop: true,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button__next',
+        prevEl: '.swiper-button__prev',
+      },
+    });
+  }
+
+  if (window.screen.width <= 1100 && window.screen.width >= 650) {
+    showSwiperSlide(3);
+  } else if (window.screen.width <= 649 && window.screen.width >= 450) {
+    showSwiperSlide(2);
+  } else if (window.screen.width <= 449) {
+    showSwiperSlide(1);
+  } else {
+    showSwiperSlide(4);
+  }
 </script>
 {% schema %}
 {

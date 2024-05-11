@@ -436,7 +436,7 @@
       if (this.predictiveSearch && this.predictiveSearch.isOpen) return;
 
       if (scrollTop > this.currentScrollTop && scrollTop > this.headerBounds.bottom) {
-        console.log("scroll top==>");
+        console.log("scroll top==>", this.header.classList);
         this.header.classList.add('scrolled-past-header');
         this.header.classList.add('scroll-bottom');
         this.header.classList.add('scroll-header');
