@@ -1934,6 +1934,7 @@ input[type='checkbox'] {
 .quantity__button svg {
   width: 2rem;
   pointer-events: none;
+  color: #555 !important;
 }
 
 .quantity__button:focus-visible,
