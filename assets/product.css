@@ -91,7 +91,7 @@
 }
 .quantity {
   display: flex;
-  gap: 10x !important;
+  gap: 10px !important;
   width: 58% !important;
 }
 
