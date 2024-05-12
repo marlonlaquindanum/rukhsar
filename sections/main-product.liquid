@@ -4,6 +4,7 @@
   data-section="{{ section.id }}"
 >
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+  {{ 'product-help-modal.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
@@ -33,6 +34,7 @@
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-help--modal.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
@@ -64,121 +66,7 @@
       onload="this.media='all'"
     >
   {%- endif -%}
-  <style>
-    .breadcrumbs {
-      margin: 0 0 2em;
-    }
 
-    .breadcrumbs__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .breadcrumbs__item {
-      display: inline-block;
-    }
-
-    .breadcrumbs__item:not(:last-child):after {
-      border-style: solid;
-      border-width: 0.1em 0.1em 0 0;
-      content: '';
-      display: inline-block;
-      height: 0.2em;
-      margin: 0 0.2em;
-      position: relative;
-      transform: rotate(45deg);
-      vertical-align: middle;
-      width: 0.2em;
-    }
-
-    .breadcrumbs__link {
-      text-decoration: underline;
-    }
-
-    .breadcrumbs__link[aria-current='page'] {
-      color: inherit;
-      font-weight: normal;
-      text-decoration: none;
-    }
-
-    .breadcrumbs__link[aria-current='page']:hover,
-    .breadcrumbs__link[aria-current='page']:focus {
-      text-decoration: underline;
-    }
-  </style>
-
-  {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
-    {%- assign t = template | split: '.' | first -%}
-
-    <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
-      <ol class="breadcrumbs__list">
-        <li class="breadcrumbs__item">
-          <a class="breadcrumbs__link" href="/">Home</a>
-        </li>
-        {%- case t -%}
-          {%- when 'page' -%}
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
-            </li>
-          {%- when 'product' -%}
-            {%- if collection.url -%}
-              <li class="breadcrumbs__item">
-                {{ collection.title | link_to: collection.url }}
-              </li>
-            {%- endif -%}
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
-            </li>
-          {%- when 'collection' and collection.handle -%}
-            {%- if current_tags -%}
-              <li class="breadcrumbs__item">
-                {{ collection.title | link_to: collection.url }}
-              </li>
-              <li class="breadcrumbs__item">
-                {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
-                <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page">
-                  {{- current_tags | join: ' + ' -}}
-                </a>
-              </li>
-            {%- else -%}
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="{{ collection.url }}" aria-current="page">
-                  {{- collection.title -}}
-                </a>
-              </li>
-            {%- endif -%}
-          {%- when 'blog' -%}
-            {%- if current_tags -%}
-              <li class="breadcrumbs__item">
-                {{ blog.title | link_to: blog.url }}
-              </li>
-              <li class="breadcrumbs__item">
-                {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
-                <a class="breadcrumbs__link" href="{{ tag_url }}" aria-current="page">
-                  {{- current_tags | join: ' + ' -}}
-                </a>
-              </li>
-            {%- else -%}
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
-              </li>
-            {%- endif -%}
-          {%- when 'article' -%}
-            <li class="breadcrumbs__item">
-              {{ blog.title | link_to: blog.url }}
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
-            </li>
-          {%- else -%}
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
-            </li>
-        {%- endcase -%}
-      </ol>
-    </nav>
-  {%- endunless -%}
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
   <div class="page-width">
     <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.media_position }} product--{{ section.settings.gallery_layout }} product--mobile-{{ section.settings.mobile_thumbnails }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
@@ -206,13 +94,23 @@
                   {{- block.settings.text -}}
                 </p>
               {%- when 'title' -%}
-                <div class="product__title" {{ block.shopify_attributes }}>
+                <div class="product__title c-product--title" {{ block.shopify_attributes }}>
                   <h1>{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
                       {{ product.title | escape }}
                     </h2>
                   </a>
+                </div>
+
+                {% for collection in product.collections %}
+                  <p class="collection-title c-collection--title">{{ collection.title }}</p>
+                {% endfor %}
+
+                <div class="product-reviews-summary empty">
+                    <div class="reviews-actions">
+                        <a class="c-review-popup-link" id="review-popup-link" href="javascript:void(0)">Leave a review</a>
+                    </div>
                 </div>
               {%- when 'price' -%}
                 <div id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
@@ -228,7 +126,7 @@
                     <span>{{ 'products.product.volume_pricing.note' | t }}</span>
                   </div>
                 {%- endif -%}
-                <div class="product__tax caption rte">
+                <div class="product__tax caption rte c-display-none">
                   {%- if cart.taxes_included -%}
                     {{ 'products.product.include_taxes' | t }}
                   {%- endif -%}
@@ -242,6 +140,17 @@
                     <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
                     {{ form | payment_terms }}
                   {%- endform -%}
+                </div>
+              {%  when 'helpmodal' %}
+                <div class="helpmodal">
+                  <form>
+                    <label class="checkbox-inline">
+                      <input type="checkbox" value=""><span class="helpmodal--text">Join dusk Rewards - $10 for 2 years</span>
+                    </label>
+
+                    <span class="info-icon"></span>
+                    
+                  </form>
                 </div>
               {%- when 'inventory' -%}
                 <p
@@ -674,9 +583,9 @@
                                   -%}
                                     <li>
                                       {%- if block.settings.enable_quick_add -%}
-                                        {% assign quick_add = 'standard' %}
+                                        {% assign quick_add = "standard" %}
                                       {%- else -%}
-                                        {% assign quick_add = 'none' %}
+                                        {% assign quick_add = "none" %}
                                       {%- endif -%}
                                       {% render 'card-product',
                                         card_product: product,
@@ -899,6 +808,10 @@
           "label": "t:sections.main-product.blocks.text.settings.text_style.label"
         }
       ]
+    },
+    {
+      "type": "helpmodal",
+      "name": "t:sections.main-product.blocks.helpmodal.name"
     },
     {
       "type": "title",
