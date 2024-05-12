@@ -68,6 +68,9 @@
   align-items: center;
   gap: 10px;
 }
+.shopify-payment-button {
+  display: none;
+}
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
       max-width: 50%;
