@@ -87,7 +87,7 @@
 }
 .quantity__input {
   transform: scale(1.2);
-  border: 1px solid;
+  border: 1px solid #555;
 }
 .quantity {
   display: flex;
