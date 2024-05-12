@@ -101,6 +101,9 @@
 .quantity__button:hover .quantity__button svg {
   color: #555;
 }
+.product-form__submit {
+  background: #f5ae34;
+}
 
 
 @media screen and (min-width: 990px) {
