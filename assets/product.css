@@ -80,6 +80,9 @@
 .c-buy-button {
   width: 45%;
 }
+.Qty-font {
+  font-weight: 700;
+}
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
       max-width: 50%;
