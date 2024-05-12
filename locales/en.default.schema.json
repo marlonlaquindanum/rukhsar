@@ -1960,6 +1960,9 @@
         "title": {
           "name": "Title"
         },
+        "helpmodal": {
+          "name": "product help modal"
+        },
         "price": {
           "name": "Price"
         },
