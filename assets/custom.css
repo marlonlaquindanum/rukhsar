@@ -511,18 +511,13 @@ s.price-item.price-item--regular {
   width: 5rem;
 }
 
-.scroll-header .header__heading-link {
-  text-decoration: 0.3s;
-  display: none;
-}
-
 .scroll-header .header__icons {
   text-decoration: 0.3s;
   display: none;
 }
 
 .header {
-  height: 200px;
+  height: 230px;
   padding-bottom: 1rem !important;
   transition-duration: 0.3s;
 }
@@ -538,6 +533,7 @@ s.price-item.price-item--regular {
 
 .scroll-bottom .navbar-logo {
   display: block;
+  animation: slideRight 1s;
 }
 
 .scroll-bottom .header {
@@ -746,7 +742,7 @@ footer > .footer__content-top .footer-block.grid__item {
 }
 
 .footer-block__details-content > li {
-  width: 230px;
+  width: 225px;
   text-align: left;
 }
 
@@ -815,4 +811,54 @@ footer > .footer__content-top .footer-block.grid__item {
   .card-information .regular-wrapper > .price-item, .card-information .rewards-wrapper > .price-item {
     font-size: 15px;
   }
+
+  .footer-block__details-content {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .card__content {
+    font-size: 8px;
+  }
+}
+
+.marquee {
+  font-size: 19.2px;
+  color: #000;
+  height: 2.5vw;
+  overflow: hidden;
+  background-color: #FFE1EB;
+  position: relative;
+}
+
+.marquee div {
+  display: block;
+  width: 200%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 12s linear infinite;
+}
+
+.marquee span {
+  float: left;
+  width: 50%;
+}
+
+.item {
+  padding: 1rem;
+}
+
+.scroll-header .header__heading {
+  display: none;
+}
+
+@keyframes marquee {
+  0% { left: 0; }
+  100% { left: -100%; }
+}
+
+@keyframes slideRight {
+  0% {max-width: 0;}
+  100% {max-width: 100%;}
 }

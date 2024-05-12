@@ -254,6 +254,7 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'product.css' | asset_url | stylesheet_tag }}
     {{ 'product-help-modal.css' | asset_url | stylesheet_tag }}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       {% comment %}theme-check-disable AssetPreload{% endcomment %}
@@ -288,7 +289,6 @@
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-
     <!-- Product-help-modal -->
     <div id="myModal" class="modal">
       <!-- Modal content -->
@@ -297,7 +297,7 @@
         <p>Some text in the Modal..</p>
       </div>
     </div>
-    
+
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -318,7 +318,7 @@
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
       <li id="a11y-new-window-message">{{ 'accessibility.link_messages.new_window' | t }}</li>
     </ul>
-     <script src="{{ 'product-help--modal.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'product-help--modal.js' | asset_url }}" defer="defer"></script>
 
     <script>
       window.shopUrl = '{{ request.origin }}';

@@ -14,26 +14,39 @@
 {% endcomment %}
 <div class="col-12 text-center align-items-center justify-content-center siteWide-containter" style="overflow: hidden;">
   <a href="#">
-    <div class="ticker-wrap">
-      <div class="ticker">
-        <span class="item-collection-1">
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-        </span>
-        <span class="item-collection-2">
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-          <span class="item">Limited time only • Limited time only • Limited time only • </span>
-        </span>
+    <div class="marquee">
+      <div class="marquee item-wrapper">
+        {% for i in (1..2) %}
+          <span class="item">
+            {% for item in (1..15) %}
+              {% for block in section.blocks %}
+                {% case block.type %}
+                  {% when 'anounce_text' %}
+                    {{ block.settings.show_text }} •
+                {% endcase %}
+              {% endfor %}
+            {% endfor %}
+          </span>
+        {% endfor %}
+        {% comment %}
+          <span class="item">
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+          </span>
+          <span class="item">
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
+          </span>
+        {% endcomment %}
       </div>
     </div>
   </a>
@@ -72,6 +85,12 @@
   "settings": [
     {
       "type": "text",
+      "id": "news_letter_text",
+      "label": "News Letter",
+      "default": "Limited time only"
+    },
+    {
+      "type": "text",
       "id": "head_text",
       "label": "Text",
       "default": "The \"One for Me, One for you\"Event"
@@ -103,6 +122,20 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "anounce_text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "show_text",
+          "label": "Text",
+          "default": "Limited time only"
+        }
+      ]
     }
   ],
   "presets": [
