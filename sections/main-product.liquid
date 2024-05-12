@@ -262,7 +262,7 @@
                     | item_count_for_variant: product.selected_or_first_available_variant.id
                   -%}
                   {% # theme-check-enable %}
-                  <label class="quantity__label form__label" for="Quantity-{{ section.id }}">
+                  <label class="quantity__label form__label Qty-font" for="Quantity-{{ section.id }}">
                     <!-- {{ 'products.product.quantity.label' | t }} -->
                     Qty
                     <span class="quantity__rules-cart{% if cart_qty == 0 %} hidden{% endif %}">
