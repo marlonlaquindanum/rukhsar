@@ -94,6 +94,11 @@
   gap: 10px !important;
   width: 58% !important;
 }
+.quantity__button {
+  background: #555 !important;
+  border-radius: 3px;
+}
+
 
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
