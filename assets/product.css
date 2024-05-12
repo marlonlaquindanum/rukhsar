@@ -63,6 +63,11 @@
   padding: 10px 0;
   margin-top: 20px;
 }
+.product-form__quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
       max-width: 50%;
