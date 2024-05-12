@@ -89,6 +89,11 @@
   transform: scale(1.2);
   border: 1px solid;
 }
+.quantity {
+  display: flex;
+  gap: 10x;
+  width: 58% 1important;
+}
 
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
