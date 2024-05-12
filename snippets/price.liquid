@@ -38,7 +38,7 @@
 -%}
 
 <div
-  class="
+  class=" c-price--position
     price
     {%- if price_class %} {{ price_class }}{% endif -%}
     {%- if available == false %} price--sold-out{% endif -%}
@@ -86,7 +86,7 @@
     <div class="price__sale">
       {%- unless product.price_varies == false and product.compare_at_price_varies %}
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-        <div class="regular-wrapper">
+        <div class="regular-wrapper c-price--right_border">
           <h5 class="regular">regular</h5>
           <s class="price-item price-item--regular">
             {% if settings.currency_code_enabled %}
@@ -121,7 +121,7 @@
     </small>
   </div>
   {%- if show_badges -%}
-    <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
+    <span class="c-display-none badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
       {{ 'products.product.on_sale' | t }}
     </span>
 
