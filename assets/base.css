@@ -1228,9 +1228,9 @@ button.shopify-payment-button__button--unbranded {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border-radius: var(--buttons-radius-outset);
+  /* border-radius: var(--buttons-radius-outset);
   box-shadow: var(--shadow-horizontal-offset) var(--shadow-vertical-offset) var(--shadow-blur-radius)
-    rgba(var(--color-shadow), var(--shadow-opacity));
+    rgba(var(--color-shadow), var(--shadow-opacity)); */
 }
 
 .button:after,
