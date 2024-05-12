@@ -3,6 +3,7 @@
     "news_letter_HnnWRx": {
       "type": "news-letter",
       "settings": {
+        "news_letter_text": "Limited time only",
         "head_text": "The \"One for Me, One for you\"Event",
         "main_text_1": "Buy 1... Get 1",
         "main_text_2": "50% Off Storewide",
@@ -55,6 +56,7 @@
         "slide_fJ4kCr",
         "slide_8RXdND"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -94,7 +96,6 @@
         "heading",
         "button"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/20240501-HP-HeroFullWidth-MothersDay-d.webp",
         "image_overlay_opacity": 0,
