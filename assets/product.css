@@ -67,8 +67,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  max-width: 40%;
-  margin: 0;
+  max-width: 40% !important;
+  margin: 0 !important;
 }
 .shopify-payment-button {
   display: none;
