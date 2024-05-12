@@ -91,8 +91,8 @@
 }
 .quantity {
   display: flex;
-  gap: 10x;
-  width: 58% important;
+  gap: 10x !important;
+  width: 58% !important;
 }
 
 @media screen and (min-width: 990px) {
