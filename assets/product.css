@@ -223,6 +223,7 @@ h1 {
 #nav-section .container {
   display: flex;
   align-items: center;
+  background: #fff url('') left top repeat;
 }
 
 /* For mobile screens */
