@@ -91,19 +91,19 @@
         "padding_bottom": 28
       }
     },
-    "featured_collection_xPKXaE": {
-      "type": "featured-collection",
+    "featured_collection_custom_jnK6xG": {
+      "type": "featured-collection-custom",
       "settings": {
-        "title": "Featured collection",
+        "title": "Other items you may enjoy",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "soy-collection",
+        "collection": "healing-stones",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
@@ -119,19 +119,19 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_custom_jnK6xG": {
-      "type": "featured-collection-custom",
+    "featured_collection_xPKXaE": {
+      "type": "featured-collection",
       "settings": {
-        "title": "Other items you may enjoy",
+        "title": "Featured collection",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "healing-stones",
+        "collection": "signature-collection",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
@@ -162,8 +162,8 @@
     "news_letter_e9dB46",
     "main",
     "related-products",
-    "featured_collection_xPKXaE",
     "featured_collection_custom_jnK6xG",
+    "featured_collection_xPKXaE",
     "contact_form_custom_FqeVN6"
   ]
 }
