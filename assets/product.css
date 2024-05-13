@@ -265,6 +265,9 @@ h1 {
   width: max-content;
   height:47px;
 }
+#nav-section {
+  display: none;
+}
 .fixed-nav{
   position:fixed;
   top:0;
