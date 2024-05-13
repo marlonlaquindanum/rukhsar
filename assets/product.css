@@ -256,6 +256,10 @@ h1 {
   font-weight: 700;
   line-height: 30px;
 }
+.rewards {
+  font-size: 12px;
+  font-weight: 200;
+}
 
 /* For mobile screens */
 @media (max-width: 767px) {
