@@ -103,6 +103,9 @@
 }
 .product-form__submit {
   background: #f5ae34;
+  color: white;
+  border-radius: 5px;
+  text-transform: capitalize;
 }
 
 
