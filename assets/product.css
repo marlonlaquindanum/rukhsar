@@ -106,7 +106,7 @@
   color: white;
   border-radius: 5px;
   text-transform: capitalize;
-  font-size: 22px;
+  font-size: 22px !important;
 }
 
 
