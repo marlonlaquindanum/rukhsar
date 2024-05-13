@@ -1963,6 +1963,9 @@
         "helpmodal": {
           "name": "product help modal"
         },
+        "productstate": {
+          "name": "productstate"
+        },
         "price": {
           "name": "Price"
         },
