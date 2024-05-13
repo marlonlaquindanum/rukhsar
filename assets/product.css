@@ -179,7 +179,7 @@ h1 {
   max-height: 0; /* Set a default max-height, but don't display it */
   overflow: hidden; /* Hide the content */
   transition: max-height 0.4s ease-out; /* Add a transition effect when sliding down (and up) the content */
-  padding: 0 1em;
+  padding: 5px 1em;
 }
 .accordion-content table {
   margin: 15px 0;
