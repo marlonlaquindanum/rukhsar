@@ -70,7 +70,7 @@
   {%- endif -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
-  <div id="nav-section">
+  <div id="nav-section" class="nav-bar">
       <div class="container">
         {% for block in section.blocks %}
           {% case block.type %}
