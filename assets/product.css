@@ -186,8 +186,11 @@ h1 {
 }
 
 .accordion-content p {
-  padding: 1em 0;
-  margin: 0;
+    padding: 5px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'helvetica';
 }
 
 /* Add this class to .accordion-content when the accordion item is active/open */
