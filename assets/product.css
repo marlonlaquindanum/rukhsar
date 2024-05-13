@@ -247,6 +247,7 @@ h1 {
 .nav-price-buy-button {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 50%;
 }
 
