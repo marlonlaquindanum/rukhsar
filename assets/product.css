@@ -121,7 +121,7 @@
 .product--large .thumbnail-list {
     grid-template-columns: repeat(3, 1fr) !important;
 }
-.thumbnail-list__item {
+.thumbnail[aria-current]:focus-visible {
   border: 1px solid #f5ae34;
 }
 
