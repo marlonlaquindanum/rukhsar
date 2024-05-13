@@ -263,6 +263,7 @@ h1 {
 }
 #nav-section .container .c-buy-button {
   width: max-content;
+  height:47px;
 }
 
 /* For mobile screens */
