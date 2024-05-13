@@ -261,6 +261,9 @@ h1 {
   font-size: 12px;
   font-weight: 200;
 }
+#nav-section .container .c-buy-button {
+  width: max-content;
+}
 
 /* For mobile screens */
 @media (max-width: 767px) {
