@@ -2,17 +2,6 @@
   "sections": {
     "news_letter_HnnWRx": {
       "type": "news-letter",
-      "blocks": {
-        "anounce_text_wEF79M": {
-          "type": "anounce_text",
-          "settings": {
-            "show_text": "Limited time only"
-          }
-        }
-      },
-      "block_order": [
-        "anounce_text_wEF79M"
-      ],
       "settings": {
         "news_letter_text": "Limited time only",
         "head_text": "The \"One for Me, One for you\"Event",
