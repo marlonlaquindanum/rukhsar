@@ -181,6 +181,9 @@ h1 {
   transition: max-height 0.4s ease-out; /* Add a transition effect when sliding down (and up) the content */
   padding: 0 1em;
 }
+.accordion-content table {
+  margin: 15px;
+}
 
 .accordion-content p {
   padding: 1em 0;
