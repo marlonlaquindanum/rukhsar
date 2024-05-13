@@ -251,7 +251,7 @@ h1 {
   justify-content: flex-end;
   width: 50%;
 }
-.price-item {
+#nav-section .container .price--on-sale .price-item--regular {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
