@@ -274,7 +274,7 @@ h1 {
   width:100%;
   z-index: 10;
   top: 43px;
-  display: block !important;
+  display: block;
 }
 
 /* For mobile screens */
