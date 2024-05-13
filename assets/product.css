@@ -116,6 +116,12 @@
   
 }
 
+@media screen and (min-width: 750px) {
+  .product-media-container.constrain-height {
+    --constrained-min-height: 100% !important;
+  }
+}
+
 
 @media screen and (min-width: 990px) {
     .product--large:not(.product--no-media) .product__media-wrapper {
