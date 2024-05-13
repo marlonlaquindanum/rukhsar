@@ -265,6 +265,11 @@ h1 {
   width: max-content;
   height:47px;
 }
+#nav-section.fixed-nav{
+  position:fixed;
+  top:0;
+  width:100%;
+}
 
 /* For mobile screens */
 @media (max-width: 767px) {
