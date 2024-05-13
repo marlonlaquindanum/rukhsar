@@ -105,8 +105,8 @@
   background: #f5ae34;
   color: white;
   border-radius: 5px;
-  text-transform: capitalize;
-  font-size: 22px !important;
+  text-transform: capitalize !important;
+  font-size: 22px ;
 }
 .product-form__submit:hover {
   background: black !important;
