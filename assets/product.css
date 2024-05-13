@@ -220,6 +220,10 @@ h1 {
 .accordion-item.active h2::before {
   content: "-";
 }
+.nav-section container {
+  display: flex;
+  align-items: center;
+}
 
 /* For mobile screens */
 @media (max-width: 767px) {
