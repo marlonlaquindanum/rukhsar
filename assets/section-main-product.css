@@ -1024,8 +1024,8 @@ a.product__text {
 }
 
 .thumbnail[aria-current] {
-  box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground));
-  border-color: rgb(var(--color-foreground));
+  box-shadow: 0 0 0rem 0.1rem #f5ae34;
+  border-color: #f5ae34;
 }
 
 .image-magnify-full-size {
