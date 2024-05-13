@@ -75,7 +75,7 @@
     "featured_collection_custom_wFUNgn": {
       "type": "featured-collection-custom",
       "settings": {
-        "title": "Featured collection",
+        "title": "dusk favourites...",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -84,7 +84,7 @@
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "",
