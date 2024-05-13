@@ -75,7 +75,7 @@
         {% render 'product-media-gallery', variant_images: variant_images %}
         {% for block in section.blocks %}
           {% if block.type == "description" %}
-            {{ block.description }}
+            {{ product.description }}
           {% endif %}
         {% endfor %}
       </div>
