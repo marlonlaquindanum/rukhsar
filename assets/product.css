@@ -115,6 +115,9 @@
   color: white !important;
   
 }
+.global-media-settings {
+  border: 0 !important;
+}
 
 @media screen and (min-width: 750px) {
   .product-media-container.constrain-height {
