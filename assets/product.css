@@ -270,7 +270,8 @@ h1 {
   top:0;
   width:100%;
   z-index: 10;
-    top: 43px;
+  top: 43px;
+  display: block;
 }
 
 /* For mobile screens */
