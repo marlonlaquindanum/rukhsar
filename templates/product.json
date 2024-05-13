@@ -1,5 +1,17 @@
 {
   "sections": {
+    "news_letter_e9dB46": {
+      "type": "news-letter",
+      "settings": {
+        "news_letter_text": "Limited time only",
+        "head_text": "The \"One for Me, One for you\"Event",
+        "main_text_1": "Buy 1... Get 1",
+        "main_text_2": "50% Off Storewide",
+        "link_text": "Shop Now",
+        "link_url": "",
+        "image": "shopify:\/\/shop_images\/20240501-Sitewide-MD24-BOGO-d.webp"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -106,11 +118,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "contact_form_custom_FqeVN6": {
+      "type": "contact-form-custom",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
+    "news_letter_e9dB46",
     "main",
     "related-products",
-    "featured_collection_custom_Rr9hQa"
+    "featured_collection_custom_Rr9hQa",
+    "contact_form_custom_FqeVN6"
   ]
 }
