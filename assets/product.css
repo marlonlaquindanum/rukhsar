@@ -225,6 +225,22 @@ h1 {
   align-items: center;
   background: #fff url('./bg-woodgrain.png') left top repeat;
 }
+.nav-title {
+      font-size: 2rem;
+    font-weight: 400;
+    font-style: normal;
+    text-rendering: geometricPrecision;
+    padding-top: 7px;
+    float: left;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    margin: 0;
+    line-height: 1.2;
+    color: #555;
+}
 
 /* For mobile screens */
 @media (max-width: 767px) {
