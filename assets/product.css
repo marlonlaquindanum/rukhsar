@@ -173,10 +173,7 @@ h1 {
   font-size: 18px;
   font-weight: 600;
 }
-.accordion-table {
-  
-  padding: 15px !important;
-}
+
 
 .accordion-content {
   max-height: 0; /* Set a default max-height, but don't display it */
