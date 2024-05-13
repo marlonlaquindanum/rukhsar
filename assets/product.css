@@ -76,6 +76,8 @@
 .quantityy_selector-with-buy-button {
   display: flex;
   align-content: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
 .c-buy-button {
   width: 45%;
