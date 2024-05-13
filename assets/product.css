@@ -224,7 +224,7 @@ h1 {
   display: flex;
   align-items: center;
   background: #fff url('./bg-woodgrain.png') left top repeat;
-  padding: 20px;
+  padding: 20px 50px;
 }
 #nav-section .container .c-product--title {
   width: 50%;
