@@ -225,8 +225,10 @@ h1 {
   align-items: center;
   background: #fff url('./bg-woodgrain.png') left top repeat;
 }
-#nav-section .container .nav-title {
+#nav-section .container .c-product--title {
   width: 50%;
+}
+#nav-section .container .nav-title {
   font-size: 2rem;
   font-weight: 400;
   font-style: normal;
