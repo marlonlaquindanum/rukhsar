@@ -108,6 +108,11 @@
   text-transform: capitalize;
   font-size: 22px !important;
 }
+.product-form__submit:hover {
+  background: black !important;
+  color: white !important;
+  
+}
 
 
 @media screen and (min-width: 990px) {
