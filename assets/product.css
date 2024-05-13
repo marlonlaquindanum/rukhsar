@@ -262,6 +262,9 @@ h1 {
   font-size: 12px;
   font-weight: 200;
 }
+#nav-section .container .product-form__submit {
+  font-size: 20px;
+}
 #nav-section .container .c-buy-button {
   width: max-content;
   height:47px;
