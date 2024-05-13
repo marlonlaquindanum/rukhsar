@@ -241,6 +241,10 @@ h1 {
     line-height: 1.2;
     color: #555;
 }
+.nav-price-buy-button {
+  display: flex;
+  align-items: center;
+}
 
 /* For mobile screens */
 @media (max-width: 767px) {
