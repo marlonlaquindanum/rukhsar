@@ -121,6 +121,9 @@
 .product--large .thumbnail-list {
     grid-template-columns: repeat(3, 1fr) !important;
 }
+.thumbnail-list__item {
+  border: 1px solid #f5ae34;
+}
 
 @media screen and (min-width: 750px) {
   .product-media-container.constrain-height {
