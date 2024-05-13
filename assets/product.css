@@ -226,24 +226,26 @@ h1 {
   background: #fff url('./bg-woodgrain.png') left top repeat;
 }
 #nav-section .container .nav-title {
-      font-size: 2rem;
-    font-weight: 400;
-    font-style: normal;
-    text-rendering: geometricPrecision;
-    padding-top: 7px;
-    float: left;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: block;
-    margin: 0;
-    line-height: 1.2;
-    color: #555;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: geometricPrecision;
+  padding-top: 7px;
+  float: left;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  margin: 0;
+  line-height: 1.2;
+  color: #555;
 }
 .nav-price-buy-button {
   display: flex;
   align-items: center;
+  width: 50%;
 }
 
 /* For mobile screens */
