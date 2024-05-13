@@ -119,7 +119,7 @@
   border: 0 !important;
 }
 .product--large .thumbnail-list {
-    grid-template-columns: repeat(3, 1fr) 1important;
+    grid-template-columns: repeat(3, 1fr) !important;
 }
 
 @media screen and (min-width: 750px) {
