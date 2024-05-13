@@ -269,6 +269,8 @@ h1 {
   position:fixed;
   top:0;
   width:100%;
+  z-index: 10;
+    top: 43px;
 }
 
 /* For mobile screens */
