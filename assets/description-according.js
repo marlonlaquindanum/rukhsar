@@ -8,7 +8,7 @@ document.querySelectorAll('.accordion-item h2').forEach((accordionToggle) => {
        accordionContent.style.maxHeight = null; 
        accordionItem.classList.remove('active'); 
       } else {
-        accordionContent.style.maxHeight = 100%; 
+        accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px'; 
             accordionItem.classList.add('active'); 
         }
     });
