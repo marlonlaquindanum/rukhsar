@@ -72,7 +72,19 @@
   <div class="page-width">
     <div id="nav-section">
       <div class="container">
-        
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {%- when 'title' -%}
+                <div class="product__title c-product--title" {{ block.shopify_attributes }}>
+                  <h1>{{ product.title | escape }}</h1>
+                  <a href="{{ product.url }}" class="product__title">
+                    <h2 class="h1">
+                      {{ product.title | escape }}
+                    </h2>
+                  </a>
+                </div>
+          {% endcase %}
+        {% endfor %}
       </div>
     </div>
 
