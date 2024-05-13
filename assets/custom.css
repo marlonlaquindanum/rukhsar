@@ -381,7 +381,6 @@ nav.header__inline-menu {
 }
 
 .price--on-sale {
-  margin-top: 40px !important;
   display: flex;
   justify-content: center;
 }
