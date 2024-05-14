@@ -730,7 +730,7 @@ body {
 
 .footer-block__details-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -809,6 +809,10 @@ footer > .footer__content-top .footer-block.grid__item {
 
   .header__icon--account:before {
     right: -40px;
+  }
+
+  .field__label {
+    font-size: 0px;
   }
 }
 
