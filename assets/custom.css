@@ -956,3 +956,19 @@ details > .menu-drawer {
 .breadcrumbs__link[aria-current='page']:focus {
   text-decoration: underline;
 }
+
+.c-price--position {
+  text-align: center;
+}
+
+.price__regular {
+  display: none !important;
+}
+
+.checkbox-inline {
+  display: none;
+}
+
+.info-icon {
+  display: none;
+}

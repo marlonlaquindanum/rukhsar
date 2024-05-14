@@ -23,7 +23,7 @@
 }
 
 .product__info-wrapper > product-info .c-price--position {
-  justify-content: flex-start;
+  text-align: left;
 }
 
 .c-display-none {
