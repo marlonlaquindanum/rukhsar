@@ -56,6 +56,7 @@
         "slide_fJ4kCr",
         "slide_8RXdND"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -96,7 +97,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/20240501-HP-HeroFullWidth-MothersDay-d.webp",
+        "image": "shopify:\/\/shop_images\/5cdd3472-3dda-4d05-aafa-c11df92a3899.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
