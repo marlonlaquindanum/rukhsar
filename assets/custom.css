@@ -292,7 +292,7 @@ nav.header__inline-menu {
 
 .swiper-slide .card__content > .card__information {
   padding-bottom: 0;
-  padding-top: 7rem;
+  padding-top: 3rem;
 }
 
 .underline-links-hover:hover a {
@@ -396,7 +396,9 @@ s.price-item.price-item--regular {
 }
 
 .card__heading {
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  height: 80px;
 }
 
 .button {
@@ -626,7 +628,6 @@ body {
 
 .card-collection__btn {
   display: inline-block;
-  margin-top: 6rem;
   text-transform: uppercase;
   color: #fff !important;
   background-color: #000;
@@ -877,4 +878,77 @@ details > .menu-drawer {
 
 .gl-col-right, .ui-autocomplete-flex, .ui-icon, body.gl-search-open {
   overflow: auto !important;
+}
+
+.collection__title {
+  padding-left: 0;
+}
+
+.product__description {
+  margin-top: 3rem;
+}
+
+.card-wrapper {
+  width: 100%;
+}
+
+.gf-filter-contents {
+  padding: 2rem 0 !important;
+  border: solid 1px #000 !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+
+.h3 {
+  border: none !important;
+  font-family: 'sofia-pro';
+  font-size: 17px !important;
+  font-weight: 500 !important;
+  line-height: 20.4px;
+}
+
+.collection__title > .title {
+  margin-bottom: 0 ;
+}
+
+.breadcrumbs {
+  margin: 0 0 2em;
+}
+
+.breadcrumbs__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs__item {
+  display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-child):after {
+  border-style: solid;
+  border-width: 0.1em 0.1em 0 0;
+  content: '';
+  display: inline-block;
+  height: 0.2em;
+  margin: 0 0.2em;
+  position: relative;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  width: 0.2em;
+}
+
+.breadcrumbs__link {
+  text-decoration: underline;
+}
+
+.breadcrumbs__link[aria-current='page'] {
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.breadcrumbs__link[aria-current='page']:hover,
+.breadcrumbs__link[aria-current='page']:focus {
+  text-decoration: underline;
 }

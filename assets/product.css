@@ -1,16 +1,19 @@
 .c-product--title {
-    color: #000;
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-size: 28px;
-    line-height: 1.1;
-    margin: 0 0 30px;
-    padding: 0;
+  color: #000;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.1;
+  margin: 0 0 30px;
+  padding: 0;
 }
+
 .c-product--title h1 {
-    font-weight: 600 !important;
-    font-size: 28px;
-    color: black;
+  font-weight: 600 !important;
+  font-size: 28px;
+  color: black;
+  text-align: left;
 }
+
 .c-collection--title {
   font-size: 18px;
   color: #888 !important;
@@ -18,23 +21,29 @@
   line-height: 1.4;
   padding: 0;
 }
-.c-price--position {
-  justify-content: flex-start !important;
+
+.product__info-wrapper > product-info .c-price--position {
+  justify-content: flex-start;
 }
+
 .c-display-none {
   display: none !important;
 }
+
 .c-price--right_border {
   border-right: 1px solid #ddd;
 }
+
 .c-review-popup-link {
   color: #000;
   text-decoration: none;
 }
+
 .c-review-popup-link:hover {
   color: #f5ae34;
   text-decoration: underline;
 }
+
 .helpmodal--text {
     color: #651cab;
     font-size: 18px;
@@ -42,6 +51,7 @@
     line-height: 20px;
     position: relative;
 }
+
 .info-icon:after {
   content: '?';
   color: #777;
@@ -56,6 +66,7 @@
   border-radius: 50%;
   cursor: pointer;
 }
+
 .amlabel-text-wrapper {
   font-weight: bold;
   border-top: 1px solid #ddd;
@@ -63,6 +74,7 @@
   padding: 10px 0;
   margin-top: 20px;
 }
+
 .product-form__quantity {
   display: flex;
   align-items: center;
@@ -70,39 +82,49 @@
   max-width: 40% !important;
   margin: 0 !important;
 }
+
 .shopify-payment-button {
   display: none;
 }
+
 .quantityy_selector-with-buy-button {
   display: flex;
   align-content: center;
   border-bottom: 1px solid #ddd;
   padding-bottom: 15px;
+  flex-wrap: wrap;
 }
+
 .c-buy-button {
   width: 45%;
 }
+
 .Qty-font {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 2.2;
 }
+
 .quantity__input {
   transform: scale(1.2);
   border: 1px solid #555;
 }
+
 .quantity {
   display: flex;
   gap: 10px !important;
   width: 58% !important;
 }
+
 .quantity__button {
   background: #ddd !important;
   border-radius: 3px;
 }
+
 .quantity__button:hover .quantity__button svg {
   color: #555;
 }
+
 .product-form__submit {
   background: #f5ae34;
   color: white;
@@ -110,14 +132,16 @@
   text-transform: capitalize !important;
   font-size: 22px ;
 }
+
 .product-form__submit:hover {
   background: black !important;
   color: white !important;
-  
 }
+
 .global-media-settings {
   border: 0 !important;
 }
+
 .product--large .thumbnail-list {
     grid-template-columns: repeat(3, 1fr) !important;
 }
