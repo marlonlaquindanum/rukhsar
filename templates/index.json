@@ -15,6 +15,24 @@
     "slideshow_YerUHn": {
       "type": "slideshow",
       "blocks": {
+        "slide_hMF8wr": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5cdd3472-3dda-4d05-aafa-c11df92a3899.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_fJ4kCr": {
           "type": "slide",
           "settings": {
@@ -53,13 +71,13 @@
         }
       },
       "block_order": [
+        "slide_hMF8wr",
         "slide_fJ4kCr",
         "slide_8RXdND"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "adapt_image",
         "slider_visual": "counter",
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -96,6 +114,7 @@
         "heading",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/5cdd3472-3dda-4d05-aafa-c11df92a3899.jpg",
         "image_overlay_opacity": 0,
@@ -230,7 +249,7 @@
     "healing_stone_8bi4Wc": {
       "type": "healing-stone",
       "settings": {
-        "image": "shopify:\/\/shop_images\/20240501-HP-HeroFullWidth-HealingStones-d.webp"
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-05-14_at_06.32.23.jpg"
       }
     },
     "collection_list_custom_HzzQzp": {
