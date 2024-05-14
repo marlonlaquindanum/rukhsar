@@ -313,12 +313,14 @@ nav.header__inline-menu {
 }
 
 .card-information .regular-wrapper .price-item {
+  color: rgb(101, 28, 171);
   font-size: 18px;
 }
 
 .price__container .price-item--regular {
   text-decoration: none !important;
-  color: #747474;
+  /* color: #747474; */
+  color: rgb(101, 28, 171);
   font-weight: 700;
   line-height: 20px;
   text-align: left;
@@ -372,6 +374,7 @@ nav.header__inline-menu {
 
 .rewards-wrapper {
   margin-left: 10px;
+  display: none;
 }
 
 .card-product-footer__text {
@@ -398,7 +401,7 @@ s.price-item.price-item--regular {
 .card__heading {
   display: flex;
   justify-content: center;
-  height: 80px;
+  height: 60px;
 }
 
 .button {
@@ -786,10 +789,6 @@ footer > .footer__content-top .footer-block.grid__item {
   margin: 2rem 0;
 }
 
-.card-information .regular-wrapper .price-item {
-  font-size: 18px;
-}
-
 @media screen and (max-width: 989px) {
   .header {
     grid-template-areas:
@@ -971,4 +970,8 @@ details > .menu-drawer {
 
 .info-icon {
   display: none;
+}
+
+.spf-product-card__image {
+  margin: 2rem 0;
 }
