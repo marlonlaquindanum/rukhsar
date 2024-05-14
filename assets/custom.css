@@ -790,6 +790,14 @@ footer > .footer__content-top .footer-block.grid__item {
   font-size: 18px;
 }
 
+.banner-image-big {
+  display: block;
+}
+
+.banner-image-small {
+  display: none;
+}
+
 @media screen and (max-width: 989px) {
   .header {
     grid-template-areas:
@@ -800,6 +808,14 @@ footer > .footer__content-top .footer-block.grid__item {
   .header-search-input {
     width: 50%;
   }
+/* 
+  .banner-image-big {
+    display: none;
+  }
+
+  .banner-image-small {
+    display: block;
+  } */
 }
 
 @media screen and (max-width: 749px) {

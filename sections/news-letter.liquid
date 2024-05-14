@@ -54,25 +54,48 @@
 <div class="container-news">
   <div class="page-width">
     <a href="#" class="link">
-      <img
-        class="image_link"
-        srcset="
-          {%- if section.settings.image.width >= 550 -%}{{ section.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
-          {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
-          {%- if section.settings.image.width >= 1445 -%}{{ section.settings.image | image_url: width: 1445 }} 1445w,{%- endif -%}
-          {%- if section.settings.image.width >= 1680 -%}{{ section.settings.image | image_url: width: 1680 }} 1680w,{%- endif -%}
-          {%- if section.settings.image.width >= 2048 -%}{{ section.settings.image | image_url: width: 2048 }} 2048w,{%- endif -%}
-          {%- if section.settings.image.width >= 2200 -%}{{ section.settings.image | image_url: width: 2200 }} 2200w,{%- endif -%}
-          {%- if section.settings.image.width >= 2890 -%}{{ section.settings.image | image_url: width: 2890 }} 2890w,{%- endif -%}
-          {%- if section.settings.image.width >= 4096 -%}{{ section.settings.image | image_url: width: 4096 }} 4096w,{%- endif -%}
-          {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
-        "
-        sizes="(min-width: 750px) calc(100vw - 22rem), 1200px"
-        src="{{ section.settings.image | image_url: width: 1445 }}"
-        loading="lazy"
-        width="100%"
-        height="{{ 1400 | divided_by: section.settings.image.aspect_ratio | ceil }}"
-      >
+      {% if section.settings.image_big and section.settings.image_small %}
+        <img
+          class="image_link banner-image-big"
+          srcset="
+            {%- if section.settings.image_big.width >= 550 -%}{{ section.settings.image_big | image_url: width: 550 }} 550w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 1100 -%}{{ section.settings.image_big | image_url: width: 1100 }} 1100w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 1445 -%}{{ section.settings.image_big | image_url: width: 1445 }} 1445w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 1680 -%}{{ section.settings.image_big | image_url: width: 1680 }} 1680w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 2048 -%}{{ section.settings.image_big | image_url: width: 2048 }} 2048w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 2200 -%}{{ section.settings.image_big | image_url: width: 2200 }} 2200w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 2890 -%}{{ section.settings.image_big | image_url: width: 2890 }} 2890w,{%- endif -%}
+            {%- if section.settings.image_big.width >= 4096 -%}{{ section.settings.image_big | image_url: width: 4096 }} 4096w,{%- endif -%}
+            {{ section.settings.image_big | image_url }} {{ section.settings.image_big.width }}w
+          "
+          sizes="(min-width: 750px) calc(100vw - 22rem), 1200px"
+          src="{{ section.settings.image_big | image_url: width: 1445 }}"
+          loading="lazy"
+          width="100%"
+          height="{{ 1400 | divided_by: section.settings.image_big.aspect_ratio | ceil }}"
+        >
+        {% comment %}
+          <img
+            class="image_link banner-image-small"
+            srcset="
+              {%- if section.settings.image_small.width >= 550 -%}{{ section.settings.image_small | image_url: width: 550 }} 550w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 1100 -%}{{ section.settings.image_small | image_url: width: 1100 }} 1100w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 1445 -%}{{ section.settings.image_small | image_url: width: 1445 }} 1445w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 1680 -%}{{ section.settings.image_small | image_url: width: 1680 }} 1680w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 2048 -%}{{ section.settings.image_small | image_url: width: 2048 }} 2048w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 2200 -%}{{ section.settings.image_small | image_url: width: 2200 }} 2200w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 2890 -%}{{ section.settings.image_small | image_url: width: 2890 }} 2890w,{%- endif -%}
+              {%- if section.settings.image_small.width >= 4096 -%}{{ section.settings.image_small | image_url: width: 4096 }} 4096w,{%- endif -%}
+              {{ section.settings.image_small | image_url }} {{ section.settings.image_small.width }}w
+            "
+            sizes="(min-width: 750px) calc(100vw - 22rem), 1200px"
+            src="{{ section.settings.image_small | image_url: width: 1445 }}"
+            loading="lazy"
+            width="100%"
+            height="{{ 1400 | divided_by: section.settings.image_small.aspect_ratio | ceil }}"
+          >
+        {% endcomment %}
+      {% endif %}
     </a>
   </div>
 </div>
@@ -120,7 +143,12 @@
     },
     {
       "type": "image_picker",
-      "id": "image",
+      "id": "image_big",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_small",
       "label": "Image"
     }
   ],
