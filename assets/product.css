@@ -76,6 +76,8 @@
 .quantityy_selector-with-buy-button {
   display: flex;
   align-content: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
 .c-buy-button {
   width: 45%;
@@ -103,6 +105,200 @@
 }
 .product-form__submit {
   background: #f5ae34;
+  color: white;
+  border-radius: 5px;
+  text-transform: capitalize !important;
+  font-size: 22px ;
+}
+.product-form__submit:hover {
+  background: black !important;
+  color: white !important;
+  
+}
+.global-media-settings {
+  border: 0 !important;
+}
+.product--large .thumbnail-list {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: orange;
+  transition: 0.2s ease-out;
+}
+
+.btn{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 1em;
+}
+
+.btn:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+/*-------------Accordian-----------------*/
+
+h1 {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.accordion {
+  max-width: 50vw;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border-top: 1px solid #c5c5c5;
+  color: #333;
+}
+
+.accordion-item h2 {
+  padding: 1em;
+  margin: 0;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+.accordion-content {
+  max-height: 0; /* Set a default max-height, but don't display it */
+  overflow: hidden; /* Hide the content */
+  transition: max-height 0.4s ease-out; /* Add a transition effect when sliding down (and up) the content */
+  padding: 5px 1em;
+}
+.accordion-content table {
+  margin: 15px 0;
+}
+.accordion-content a {
+  text-decoration: none;
+  color: black;
+}
+.accordion-content a:hover {
+  color: #f5ae34;
+}
+
+.accordion-content p {
+    padding: 5px 0;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'helvetica';
+}
+
+/* Add this class to .accordion-content when the accordion item is active/open */
+.accordion-content.active {
+  max-height: auto; /* Adjust as needed */
+}
+
+/*adding the + and - signs*/
+.accordion-item h2 {
+  position: relative;
+  padding-right: 30px; /* Adjust as needed */
+}
+
+.accordion-item h2::before {
+  content: "+";
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+}
+
+.accordion-item.active h2::before {
+  content: "-";
+}
+#nav-section .container {
+  display: flex;
+  align-items: center;
+  background: #fff url('./bg-woodgrain.png') left top repeat;
+  padding: 20px 50px;
+}
+#nav-section .container .c-product--title {
+  width: 50%;
+}
+#nav-section .container .nav-title {
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  text-rendering: geometricPrecision;
+  padding-top: 7px;
+  float: left;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  margin: 0;
+  line-height: 1.2;
+  color: #555;
+}
+.nav-price-buy-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+#nav-section .container .price--on-sale .price-item--regular,
+#nav-section .container .price-item {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+#nav-section .container .regular,
+#nav-section .container .rewards {
+  font-size: 12px;
+  font-weight: 200;
+}
+#nav-section .container .product-form__submit {
+  font-size: 20px;
+}
+#nav-section .container .c-buy-button {
+  width: max-content;
+  height:47px;
+}
+
+.nav-bar {
+  display: none;
+}
+.fixed-nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index: 10;
+  top: 43px;
+  display: block;
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+  .accordion {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200px) {
+  #nav-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .product-media-container.constrain-height {
+    --constrained-min-height: 100% !important;
+  }
 }
 
 
