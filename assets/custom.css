@@ -1,7 +1,7 @@
 @font-face {
-  font-family: "Sofia-Pro";
-  src: url("{{'Sofia Pro Black Az.otf' | asset_url }}") format("otf"),
-  url("{{'Sofia Pro Black Az.otf' | asset_url }}") format("otf");
+  font-family: 'Sofia-Pro';
+  src: url("{{'Sofia Pro Black Az.woff' | asset_url }}") format("woff"),
+  url("{{'Sofia Pro Black Az.woff' | asset_url }}") format("woff");
 }
 
 main {
@@ -12,6 +12,7 @@ main {
 .justify-space-between{
   justify-content: space-between;
 }
+
 .announcement-bar__message {
   font-family: 'Sofia-Pro', Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -165,6 +166,7 @@ nav.header__inline-menu {
 }
 
 .list-unstyled .link {
+  padding: 1rem 0;
   font-size: 16px;
   font-weight: 300;
   color: #000;
@@ -427,7 +429,7 @@ s.price-item.price-item--regular {
 }
 
 .header__icon--account:before {
-  content: '';
+  /* content: '';
   border-left: solid 6px transparent;
   border-right: solid 6px transparent;
   border-top: solid 6px #000;
@@ -435,7 +437,7 @@ s.price-item.price-item--regular {
   right: -135px;
   top: 0;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: middle; */
 }
 
 .header__icon:hover, .header__icon:hover > .account-text {
@@ -512,7 +514,10 @@ s.price-item.price-item--regular {
 }
 
 .scroll-header .header__icons {
-  text-decoration: 0.3s;
+  display: none;
+}
+
+.scroll-bottom .header .header__heading-link {
   display: none;
 }
 
@@ -532,7 +537,7 @@ s.price-item.price-item--regular {
 }
 
 .scroll-bottom .navbar-logo {
-  display: block;
+  display: none;
   animation: slideRight 1s;
 }
 
@@ -686,7 +691,7 @@ body {
 
 .head-text {
   text-align: center;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 700;
   color: #000;
   margin-bottom: 0;
@@ -696,7 +701,7 @@ body {
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  font-size: 36px;
+  font-size: 32px;
 }
 
 .menu-list {
@@ -861,4 +866,16 @@ footer > .footer__content-top .footer-block.grid__item {
 @keyframes slideRight {
   0% {max-width: 0;}
   100% {max-width: 100%;}
+}
+
+details > .menu-drawer {
+  top: 0%;
+}
+
+.gl-filter-search-fullscreen {
+  display: none !important;
+}
+
+.gl-col-right, .ui-autocomplete-flex, .ui-icon, body.gl-search-open {
+  overflow: auto !important;
 }

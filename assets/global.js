@@ -518,6 +518,7 @@ class HeaderDrawer extends MenuDrawer {
     window.addEventListener('resize', this.onResize);
     trapFocus(this.mainDetailsToggle, summaryElement);
     document.body.classList.add(`overflow-hidden-${this.dataset.breakpoint}`);
+    document.body.style.overflow = 'hidden';
   }
 
   closeMenuDrawer(event, elementToFocus) {
@@ -525,6 +526,7 @@ class HeaderDrawer extends MenuDrawer {
     super.closeMenuDrawer(event, elementToFocus);
     this.header.classList.remove('menu-open');
     window.removeEventListener('resize', this.onResize);
+    document.body.style.overflow = 'auto';
   }
 
   onResize = () => {
