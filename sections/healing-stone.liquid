@@ -1,5 +1,5 @@
 {%- if section.settings.image != blank -%}
-  <a href="#" class="healing-stone">
+  <div class="healing-stone">
     <img
       srcset="
         {%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
@@ -19,7 +19,8 @@
       width="100%"
       height="100%"
     >
-  </a>
+    <a href="{{ section.settings.link_url }}" class="healing-btn">{{ section.settings.link_text }}</a>
+  </div>
 {%- endif -%}
 
 {% schema %}
@@ -32,6 +33,17 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link Text",
+      "default": "Shop Collection"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link URL"
     }
   ],
   "presets": [

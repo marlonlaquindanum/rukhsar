@@ -1,82 +1,10 @@
-{% comment %}
+<div class="news-letter__container">
+  <h4 class="header-text">{{ section.settings.news_letter_text }}</h4>
   <div class="container-news">
-    <div class="page-width">
-      <div class="text-wrapper">
-        <h6 class="head_text">{{ section.settings.head_text }}</h6>
-        <div class="text-group">
-          <h3>{{ section.settings.main_text_1 }}</h3>
-          <h1>{{ section.settings.main_text_2 }}</h1>
-        </div>
-        <a href="{{ section.settings.link_url }}" class="link">{{ section.settings.link_text }}</a>
-      </div>
-    </div>
+    <h3 class="news-item__text">{{ section.settings.head_text }}</h3>
+    <h1 class="news-item__text">{{ section.settings.main_text }}</h1>
   </div>
-{% endcomment %}
-<div class="col-12 text-center align-items-center justify-content-center siteWide-containter" style="overflow: hidden;">
-  <a href="#">
-    <div class="marquee">
-      <div class="marquee item-wrapper">
-        {% for i in (1..2) %}
-          <span class="item">
-            {% for item in (1..15) %}
-              {% for block in section.blocks %}
-                {% case block.type %}
-                  {% when 'anounce_text' %}
-                    {{ block.settings.show_text }} •
-                {% endcase %}
-              {% endfor %}
-            {% endfor %}
-          </span>
-        {% endfor %}
-        {% comment %}
-          <span class="item">
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-          </span>
-          <span class="item">
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-            {{ section.settings.news_letter_text }} • {{ section.settings.news_letter_text }} •
-          </span>
-        {% endcomment %}
-      </div>
-    </div>
-  </a>
-</div>
-<div class="container-news">
-  <div class="page-width">
-    <a href="/collections/all" class="link">
-      {% if section.settings.image %}
-        <img
-          class="image_link"
-          srcset="
-            {%- if section.settings.image.width >= 550 -%}{{ section.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
-            {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
-            {%- if section.settings.image.width >= 1445 -%}{{ section.settings.image | image_url: width: 1445 }} 1445w,{%- endif -%}
-            {%- if section.settings.image.width >= 1680 -%}{{ section.settings.image | image_url: width: 1680 }} 1680w,{%- endif -%}
-            {%- if section.settings.image.width >= 2048 -%}{{ section.settings.image | image_url: width: 2048 }} 2048w,{%- endif -%}
-            {%- if section.settings.image.width >= 2200 -%}{{ section.settings.image | image_url: width: 2200 }} 2200w,{%- endif -%}
-            {%- if section.settings.image.width >= 2890 -%}{{ section.settings.image | image_url: width: 2890 }} 2890w,{%- endif -%}
-            {%- if section.settings.image.width >= 4096 -%}{{ section.settings.image | image_url: width: 4096 }} 4096w,{%- endif -%}
-            {{ section.settings.image | image_url }} {{ section.settings.image.width }}w
-          "
-          sizes="(min-width: 750px) calc(100vw - 22rem), 1200px"
-          src="{{ section.settings.image | image_url: width: 1445 }}"
-          loading="lazy"
-          width="100%"
-          height="{{ 1400 | divided_by: section.settings.image.aspect_ratio | ceil }}"
-        >
-      {% endif %}
-    </a>
-  </div>
+  <a href="{{ section.settings.link_url }}" class="link-url">{{ section.settings.link_text }}</a>
 </div>
 
 {% schema %}
@@ -99,15 +27,9 @@
     },
     {
       "type": "text",
-      "id": "main_text_1",
+      "id": "main_text",
       "label": "Main Text",
       "default": "Buy 1... Get 1"
-    },
-    {
-      "type": "text",
-      "id": "main_text_2",
-      "label": "Main Text",
-      "default": "50% Off Storewide"
     },
     {
       "type": "text",
@@ -119,25 +41,6 @@
       "type": "url",
       "id": "link_url",
       "label": "Link URL"
-    },
-    {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "anounce_text",
-      "name": "Text",
-      "settings": [
-        {
-          "type": "text",
-          "id": "show_text",
-          "label": "Text",
-          "default": "Limited time only"
-        }
-      ]
     }
   ],
   "presets": [

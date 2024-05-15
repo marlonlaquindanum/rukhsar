@@ -90,10 +90,10 @@ main {
 .header__menu-item:hover span {
   text-decoration: none;
 }
-
+/*
 .list-menu > li:last-child .header__active-menu-item {
   color: rgb(231, 39, 55);
-}
+} */
 
 header-menu summary.list-menu__item {
   padding-right: 1rem;
@@ -198,12 +198,66 @@ nav.header__inline-menu {
   font-size: 18px;
 }
 
+.header-text {
+  text-align: center;
+  background-color: #fce2eb;
+  color: #653643;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.news-item__text {
+  text-align: center;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+.container-news > h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.container-news > h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.news-letter__link > h3, .news-letter__link > h1 {
+  text-decoration: none;
+}
+
 .header {
   padding-top: 0 !important;
 }
 
 .container-news {
   background-color: #f5b1c8;
+}
+
+.news-letter__container {
+  position: relative;
+}
+
+.link-url {
+  position: absolute;
+  text-decoration: none;
+  font-size: 20px;
+  top: 50%;
+  right: 5%;
+}
+
+.healing-stone {
+  position: relative;
+}
+
+.healing-btn {
+  position: absolute;
+  right: 5vw;
+  font-size: 2.8vw;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  bottom: 20%;
 }
 
 .text-wrapper {
@@ -214,11 +268,6 @@ nav.header__inline-menu {
 
 .text-group > h1, .text-group > h3 {
   text-align: center;
-}
-
-.container-news {
-  display: flex;
-  justify-content: center;
 }
 
 .ticker-wrap {
@@ -256,15 +305,6 @@ nav.header__inline-menu {
   font-size: 24px;
   color: #242424;
   font-weight: 200;
-}
-
-@keyframes marquee {
-  0% {
-      transform: translateX(25%)
-  }
-  100% {
-      transform: translateX(-75%)
-  }
 }
 
 @keyframes swap {

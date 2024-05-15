@@ -112,6 +112,11 @@
                             {% endcomment %}
                           </li>
                         {%- endfor -%}
+                        <li class="sub-menu-item">
+                          {%- if section.settings.show_social and has_social_icons -%}
+                            {%- render 'social-icons', class: 'footer__list-social' -%}
+                          {%- endif -%}
+                        </li>
                       </ul>
                     {%- endif -%}
                   {%- when 'brand_information' -%}
@@ -250,10 +255,6 @@
               {{ shop | login_button: action: 'follow' }}
               {% # theme-check-enable %}
             </div>
-          {%- endif -%}
-
-          {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons', class: 'footer__list-social' -%}
           {%- endif -%}
         </div>
       </div>

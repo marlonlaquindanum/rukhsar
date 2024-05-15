@@ -508,3 +508,11 @@
     }
   }
 }
+
+.footer-block__details-content > li:last-child {
+  margin-top: 2.5rem;
+}
+
+.list-social__item {
+  margin: 0 0.5rem;
+}
