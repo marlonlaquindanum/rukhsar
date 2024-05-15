@@ -5,11 +5,9 @@
       "settings": {
         "news_letter_text": "Limited time only",
         "head_text": "The \"One for Me, One for you\"Event",
-        "main_text_1": "Buy 1... Get 1",
-        "main_text_2": "50% Off Storewide",
+        "main_text": "Buy 1... Get 1",
         "link_text": "Shop Now",
-        "link_url": "",
-        "image": "shopify:\/\/shop_images\/20240501-Sitewide-MD24-BOGO-d.webp"
+        "link_url": ""
       }
     },
     "slideshow_YerUHn": {
@@ -249,7 +247,9 @@
     "healing_stone_8bi4Wc": {
       "type": "healing-stone",
       "settings": {
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-05-14_at_06.32.23.jpg"
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-05-15_at_03.17.11.jpg",
+        "link_text": "Shop Collection",
+        "link_url": ""
       }
     },
     "collection_list_custom_HzzQzp": {
