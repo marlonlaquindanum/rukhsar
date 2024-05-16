@@ -90,3 +90,20 @@
   font-weight: 700;
   font-size: 18px;
 }
+
+@media screen and (max-width: 749px) {
+  .customer:not(.account):not(.order) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+    max-width: fit-content;
+  }
+
+  .form-container {
+    display: block;
+  }
+
+  .form-section {
+    width: auto;
+    margin-top: 3rem;
+  }
+}

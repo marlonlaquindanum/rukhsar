@@ -130,7 +130,7 @@
   color: white;
   border-radius: 5px;
   text-transform: capitalize !important;
-  font-size: 22px ;
+  font-size: 1.3rem ;
 }
 
 .product-form__submit:hover {
@@ -323,6 +323,10 @@ h1 {
   .product-media-container.constrain-height {
     --constrained-min-height: 100% !important;
   }
+}
+
+@media screen and (max-width: 749px) {
+
 }
 
 
