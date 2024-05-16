@@ -865,8 +865,10 @@ footer > .footer__content-top .footer-block.grid__item {
   }
 
   .link-url {
+    font-family: var(--font-heading-family);
     display: block;
     position: relative;
+    font-size: 14px;
     width: 100%;
     background-color: rgb(245, 177, 200);
     text-align: center;
@@ -875,11 +877,13 @@ footer > .footer__content-top .footer-block.grid__item {
   }
 
   .container-news > h1 {
-    font-size: 30px;
+    font-size: 20px;
+    padding: 0;
   }
 
   .container-news > h3 {
-    font-size: 19px;
+    padding: 0.2rem 0;
+    font-size: 15px;
   }
 
   .footer-block__details-content {
@@ -1061,4 +1065,12 @@ details > .menu-drawer {
 
 .spf-product-card__image {
   margin: 2rem 0;
+}
+
+.menu-drawer__menu-item > .icon.icon-arrow {
+  top: 50%;
+}
+
+.menu-drawer__menu-item {
+  position: relative;
 }
