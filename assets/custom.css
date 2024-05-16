@@ -147,10 +147,6 @@ nav.header__inline-menu {
   top: 40px;
 }
 
-.list-menu--inline li:last-child:hover .header__active-menu-item {
-  color: rgb(231, 39, 55);
-}
-
 .mega-menu__link:hover {
   text-decoration: none !important;
   color: #f5ae34 !important;
