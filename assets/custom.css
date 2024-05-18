@@ -835,6 +835,10 @@ footer > .footer__content-top .footer-block.grid__item {
   display: none;
 }
 
+.header:not(.header--top-center) *>.header__search, .header--top-center>.header__search {
+  display: none;
+}
+
 .search-modal__form {
   width: auto;
 }
@@ -904,6 +908,10 @@ footer > .footer__content-top .footer-block.grid__item {
 
   .header__search {
     background-color: #f5ae34;
+  }
+
+  .header:not(.header--top-center) *>.header__search, .header--top-center>.header__search {
+    display: block;
   }
 
   .header .header-responsive-search {
