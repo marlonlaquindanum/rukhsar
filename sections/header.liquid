@@ -216,9 +216,9 @@
         </a>
         {%- render 'header-mega-menu' -%}
       </div>
-      <predictive-search class="search-modal__form header-search-input" data-loading-text="{{ 'accessibility.loading' | t }}">
+      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      <predictive-search class="header-responsive-search search-modal__form header-search-input" data-loading-text="{{ 'accessibility.loading' | t }}">
         <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">
-          {% render 'header-search', input_id: 'Search-In-Modal' %}
           <div class="field header-searchbar">
             <input
               class="search__input field__input"

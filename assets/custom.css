@@ -853,6 +853,10 @@ footer > .footer__content-top .footer-block.grid__item {
   .header-search-input {
     width: 50%;
   }
+
+  predictive-search {
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (max-width: 749px) {
@@ -900,6 +904,10 @@ footer > .footer__content-top .footer-block.grid__item {
 
   .header__search {
     background-color: #f5ae34;
+  }
+
+  .header .header-responsive-search {
+    display: none;
   }
 
   .search-modal__form {
