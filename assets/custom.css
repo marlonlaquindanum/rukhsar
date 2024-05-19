@@ -868,10 +868,6 @@ footer > .footer__content-top .footer-block.grid__item {
     right: -40px;
   }
 
-  .field__label {
-    font-size: 0px;
-  }
-
   .link-url {
     font-family: var(--font-heading-family);
     display: block;
