@@ -1086,3 +1086,7 @@ details > .menu-drawer {
 .menu-drawer__menu-item {
   position: relative;
 }
+
+.collection-hero__image-container > img {
+  object-fit: contain;
+}
